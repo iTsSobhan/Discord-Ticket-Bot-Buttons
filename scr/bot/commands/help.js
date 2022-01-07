@@ -1,7 +1,7 @@
 module.exports = {
     name: "help",
     cooldown: 5,
-    aliases: ["commands"],
+    aliases: ["commands","h"],
     run: async function(client, message, args) {
             var prefix = await require('quick.db').fetch(`prefix_${message.guild.id}`);
             if (prefix == null) prefix = require('../../config/bot').prefix;
